@@ -1,1 +1,378 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>本選び研究所｜あなたに合う本を見つける</title>
+<meta name="description" content="本選び研究所は、実際に読んだ本の感想や内容をもとに、自分に合う一冊を見つけるための本レビューサイトです。">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+    background: #f7f7f7;
+    color: #222;
+    line-height: 1.8;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 18px 20px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hero {
+    background: white;
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    margin: 0 0 15px;
+    font-size: 38px;
+}
+
+.hero p {
+    margin: 0 auto;
+    max-width: 700px;
+    color: #555;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-left: 5px solid #222;
+    padding-left: 12px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.book-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+}
+
+.book-card h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.book-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+.book-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.category {
+    background: white;
+    padding: 22px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 70px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            本選び研究所
+        </div>
+
+        <nav>
+            <a href="index.html">ホーム</a>
+            <a href="#reviews">レビュー</a>
+            <a href="#categories">カテゴリ</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <h1>本選び研究所</h1>
+
+    <p>
+        読んで終わりではなく、
+        「この本は自分に合うのか？」まで考える本レビューサイト。
+    </p>
+
+</section>
+
+<main class="container">
+
+    <section id="reviews">
+
+        <h2 class="section-title">
+            注目の本レビュー
+        </h2>
+
+        <div class="book-grid">
+
+            <article class="book-card">
+
+                <h3>CAN'T HURT ME</h3>
+
+                <p>
+                    デイヴィッド・ゴギンズの実体験を通して、
+                    自分の限界を超えることについて考えさせられる一冊。
+                </p>
+
+                <a class="book-link" href="cant-hurt-me.html">
+                    レビューを読む →
+                </a>
+
+            </article>
+
+
+            <article class="book-card">
+
+                <h3>ドーパミン中毒</h3>
+
+                <p>
+                    刺激や快楽との付き合い方を考えるきっかけになる一冊。
+                    自分の時間の使い方を見直したい人に。
+                </p>
+
+                <a class="book-link" href="dopamine-addiction.html">
+                    レビューを読む →
+                </a>
+
+            </article>
+
+
+            <article class="book-card">
+
+                <h3>科学的に証明されたすごい習慣</h3>
+
+                <p>
+                    習慣を感覚だけでなく、科学的な視点から考えるための本。
+                    「続けられない」を変えたい人に。
+                </p>
+
+                <a class="book-link" href="great-habits.html">
+                    レビューを読む →
+                </a>
+
+            </article>
+
+
+            <article class="book-card">
+
+                <h3>移動する人はうまくいく</h3>
+
+                <p>
+                    環境を変えることや行動することについて考えさせられる一冊。
+                    今の環境を変えたい人にも。
+                </p>
+
+                <a class="book-link" href="people-who-move.html">
+                    レビューを読む →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section id="categories" style="margin-top:70px;">
+
+        <h2 class="section-title">
+            カテゴリから探す
+        </h2>
+
+        <div class="categories">
+
+            <div class="category">
+                お金・経済
+            </div>
+
+            <div class="category">
+                習慣・自己管理
+            </div>
+
+            <div class="category">
+                ビジネス・起業
+            </div>
+
+            <div class="category">
+                投資・FX
+            </div>
+
+            <div class="category">
+                人生・考え方
+            </div>
+
+            <div class="category">
+                本のレビュー
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section style="margin-top:70px;">
+
+        <h2 class="section-title">
+            本選び研究所について
+        </h2>
+
+        <div class="about">
+
+            <p>
+                本選び研究所では、実際に本を読んで感じたことや、
+                印象に残った内容をもとに、本を紹介しています。
+            </p>
+
+            <p>
+                本の内容をただまとめるだけではなく、
+                「どんな人に向いているのか」
+                「読んで何を考えたのか」
+                「実際に役立てられそうか」
+                という視点を大切にしています。
+            </p>
+
+            <p>
+                本を買う前に、
+                「自分に合う本なのか」を判断するための
+                参考になるサイトを目指しています。
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 本選び研究所
+    </p>
+
+    <div>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="about.html">運営者情報</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
 
